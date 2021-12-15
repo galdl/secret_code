@@ -10,10 +10,10 @@ MESSAGE_VEC = ['What is the 1st address digit?', 'What is the 2nd address digit?
 print('Hi, sha512 is your friend. He likes binary dudes...')
 
 def ask_for_code(correct, message):
-   curr_guess = input(message)
+   curr_guess = input(message).lower()
    while curr_guess not in correct:
       print('You are a failure :(')
-      curr_guess = input(message)
+      curr_guess = input(message).lower()
    print('Great success!!!')
 
 
